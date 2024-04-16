@@ -13,7 +13,7 @@ import CartPage from "./CartPage"; // Import the Cart page component
 function Footer() {
   return (
     <footer>
-      <p>© 2024 My Store. All rights reserved.</p>
+      <p>© Footer Here</p>
     </footer>
   );
 }
@@ -34,7 +34,6 @@ function App() {
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/products/:productId" element={<ProductDetails />} />
               <Route path="/cart" element={<CartPage />} />{" "}
-              {/* Route for the Cart Page */}
               <Route path="/about" element={<div>About Us Page</div>} />
               <Route path="/contact" element={<div>Contact Page</div>} />
             </Routes>
