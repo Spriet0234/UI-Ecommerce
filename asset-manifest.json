@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/UI-Ecommerce/static/css/main.150dfeaa.css",
-    "main.js": "/UI-Ecommerce/static/js/main.10aacaa7.js",
-    "static/js/453.ed3810f9.chunk.js": "/UI-Ecommerce/static/js/453.ed3810f9.chunk.js",
-    "static/media/dallePic.jpg": "/UI-Ecommerce/static/media/dallePic.3c9539f38b384b31b3a6.jpg",
-    "static/media/iphone.jpg": "/UI-Ecommerce/static/media/iphone.901d4ea34195610d135c.jpg",
-    "static/media/logo.svg": "/UI-Ecommerce/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/UI-Ecommerce/index.html",
-    "main.150dfeaa.css.map": "/UI-Ecommerce/static/css/main.150dfeaa.css.map",
-    "main.10aacaa7.js.map": "/UI-Ecommerce/static/js/main.10aacaa7.js.map",
-    "453.ed3810f9.chunk.js.map": "/UI-Ecommerce/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/static/css/main.6600ee94.css",
+    "main.js": "/static/js/main.44b9f33d.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/dallePic.jpg": "/static/media/dallePic.3c9539f38b384b31b3a6.jpg",
+    "static/media/iphone.jpg": "/static/media/iphone.901d4ea34195610d135c.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.6600ee94.css.map": "/static/css/main.6600ee94.css.map",
+    "main.44b9f33d.js.map": "/static/js/main.44b9f33d.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.150dfeaa.css",
-    "static/js/main.10aacaa7.js"
+    "static/css/main.6600ee94.css",
+    "static/js/main.44b9f33d.js"
   ]
 }
