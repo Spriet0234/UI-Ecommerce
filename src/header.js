@@ -29,9 +29,11 @@ function Header() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/about">About Us</Link>
+        {/* <Link to="/about">About Us</Link> */}
+
         <Link to="/contact">Contact</Link>
         <Link to="/cart">Cart</Link>
+        <Link to="/login">Login</Link>
       </nav>
     </header>
   );

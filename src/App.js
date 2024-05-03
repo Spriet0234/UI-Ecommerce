@@ -9,6 +9,10 @@ import logo from "./logo.svg";
 import ProductDetails from "./productDetails.js";
 import { CartProvider } from "./CartContext";
 import CartPage from "./CartPage"; // Import the Cart page component
+import Login from "./Login.js";
+import CheckoutPage from "./CheckoutPage.js";
+import OrderConfirmationPage from "./Confirmation.js";
+import ContactUsPage from "./Contact.js";
 
 function Footer() {
   return (
@@ -33,9 +37,14 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/products/:productId" element={<ProductDetails />} />
-              <Route path="/cart" element={<CartPage />} />{" "}
-              <Route path="/about" element={<div>About Us Page</div>} />
-              <Route path="/contact" element={<div>Contact Page</div>} />
+              <Route path="/cart" element={<CartPage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/Checkout" element={<CheckoutPage />} />
+              <Route path="/Contact" element={<ContactUsPage />} />
+              <Route
+                path="/order-confirmation"
+                element={<OrderConfirmationPage />}
+              />
             </Routes>
           </div>
           <Footer />

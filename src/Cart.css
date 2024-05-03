@@ -1,7 +1,7 @@
 /* Cart Page Styling */
 .cart-page {
   padding: 20px;
-  width: 95%; /* Increase max-width or use percentage for responsiveness */
+  width: 90%;
   margin: 20px auto;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

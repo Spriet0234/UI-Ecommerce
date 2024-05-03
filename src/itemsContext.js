@@ -32,7 +32,7 @@ export const ItemsProvider = ({ children }) => {
       id: 4,
       name: "Laptop",
       image: IphoneImg,
-      price: "539.99",
+      price: "639.99",
       description: "High-performance laptop",
     },
     {
@@ -40,7 +40,7 @@ export const ItemsProvider = ({ children }) => {
       name: "Smartphone",
       image:
         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369781",
-      price: "539.99",
+      price: "53.99",
       description: "Latest model smartphone",
     },
     {
@@ -48,7 +48,7 @@ export const ItemsProvider = ({ children }) => {
       name: "Headphones",
       image:
         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369781",
-      price: "539.99",
+      price: "599.99",
       description: "Noise-cancelling headphones",
     },
     {

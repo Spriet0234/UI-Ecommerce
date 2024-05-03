@@ -1,9 +1,11 @@
 import React from "react";
 import { useCart } from "./CartContext";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
 function CartPage() {
   const { cartItems, removeFromCart } = useCart();
+  const navigate = useNavigate(); // Using useNavigate instead of useHistory
 
   return (
     <div className="cart-page">
@@ -38,7 +40,12 @@ function CartPage() {
               .reduce((total, item) => total + item.price * item.quantity, 0)
               .toFixed(2)}
           </div>
-          <button className="cart-checkout-button">Proceed to Checkout</button>
+          <button
+            className="cart-checkout-button"
+            onClick={() => navigate("/checkout")}
+          >
+            Proceed to Checkout
+          </button>
         </div>
       ) : (
         <p>Your cart is empty.</p>

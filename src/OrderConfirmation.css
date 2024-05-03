@@ -1,0 +1,64 @@
+/* OrderConfirmation.css */
+.order-confirmation-page {
+  padding: 20px;
+  width: 90%; /* Increase max-width or use percentage for responsiveness */
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.shipping-address {
+  background-color: #f9f9f9; /* Slight background for distinction */
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.shipping-address strong {
+  display: block; /* Makes each detail appear on a new line */
+  color: #333;
+  margin: 5px 0;
+}
+
+.confirmation-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.confirmation-item-image {
+  flex-shrink: 0; /* Prevents the image from scaling weirdly */
+  width: 120px; /* Slightly larger for better visibility */
+  height: 120px; /* Keep it square */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+  border-radius: 4px; /* Adds rounded corners to the image */
+  margin-right: 20px;
+}
+
+.confirmation-item-details {
+  flex-grow: 1;
+  margin-left: -140px;
+}
+
+.confirmation-item-name {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.confirmation-item-price,
+.confirmation-item-quantity {
+  font-size: 16px;
+  color: #666;
+}
+
+.total {
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+}

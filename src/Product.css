@@ -1,3 +1,48 @@
+/* Page Layout */
+.page-layout {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping to ensure sidebar and products are side-by-side */
+  width: 100%;
+  margin: 20px auto;
+  background-color: #fff; /* Optional: if you want a unified background color */
+}
+
+/* Sticky Sidebar */
+.sidebar {
+  position: sticky;
+  top: 20px; /* Ensures the sidebar is slightly below any fixed header if present */
+  width: 210px; /* Fixed width for the sidebar */
+  height: 500px; /* Adjusted for content */
+  padding: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling adjustments for form elements in sidebar */
+.sidebar label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 85%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Product List Area */
+.product-list {
+  flex-grow: 1; /* Takes up all available space */
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px; /* Adds space between sidebar and products */
+}
+
+/* Existing styles for product cards */
 .product-card {
   display: flex;
   flex-direction: column;
@@ -9,15 +54,14 @@
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
-  overflow: hidden;
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Set text color to inherit from parent */
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-image {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures the images are nicely cropped and centered */
+  object-fit: cover;
 }
 
 .product-info {
@@ -27,7 +71,7 @@
 
 .product-name {
   font-size: 18px;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 5px;
 }
 
 .product-price {
