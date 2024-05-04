@@ -31,8 +31,8 @@ function HomePage() {
   return (
     <div className="App">
       <div className="hero">
-        <h1>Welcome to Our Store!</h1>
-        <p>Explore our wide range of electronics!</p>
+        <h1 className="out">Welcome to Our Store!</h1>
+        <p className="out">Explore our wide range of electronics!</p>
       </div>
       <div className="banner">
         {/* <img src={dallePic} alt="Electronics Sale" /> */}

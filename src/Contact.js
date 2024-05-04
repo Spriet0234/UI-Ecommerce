@@ -61,7 +61,9 @@ function ContactUsPage() {
             required
           />
         </div>
-        <button type="submit">Send</button>
+        <button className="btn" type="submit">
+          Send
+        </button>
       </form>
       {isSent && <div className="sent-popup">Message sent!</div>}
     </div>

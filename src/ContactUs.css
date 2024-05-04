@@ -22,13 +22,15 @@ label {
 
 input,
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button {
+.btn {
+  width: 95%;
+  align-self: center;
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
@@ -37,6 +39,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-bottom: 20px;
 }
 
 button:hover {

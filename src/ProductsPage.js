@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { ItemsContext } from "./itemsContext";
 import Product from "./Product";
-import "./Product.css"; // Make sure your CSS is imported
+import "./Product.css"; // Ensure CSS is imported
 
 function ProductsPage() {
   const { items } = useContext(ItemsContext);
@@ -10,13 +10,20 @@ function ProductsPage() {
   const searchTerm = location.state?.searchTerm?.toLowerCase();
 
   const [sortOrder, setSortOrder] = useState("");
-  const [priceFilter, setPriceFilter] = useState({ min: 0, max: Infinity });
+  const [priceFilter, setPriceFilter] = useState({ min: "", max: "" });
 
-  let filteredItems = items.filter(
+  const handlePriceChange = (field, value) => {
+    setPriceFilter((prev) => ({
+      ...prev,
+      [field]: value === "" ? "" : Number(value),
+    }));
+  };
+
+  const filteredItems = items.filter(
     (item) =>
       (!searchTerm || item.name.toLowerCase().includes(searchTerm)) &&
-      item.price >= priceFilter.min &&
-      item.price <= priceFilter.max
+      (priceFilter.min === "" || item.price >= priceFilter.min) &&
+      (priceFilter.max === "" || item.price <= priceFilter.max)
   );
 
   if (sortOrder === "lowToHigh") {
@@ -25,11 +32,22 @@ function ProductsPage() {
     filteredItems.sort((a, b) => b.price - a.price);
   }
 
+  const resetFilters = () => {
+    setSortOrder("");
+    setPriceFilter({ min: "", max: "" });
+  };
+
   return (
     <div className="page-layout">
       <div className="sidebar">
+        <button className="btn2" onClick={resetFilters}>
+          Reset
+        </button>
         <label>Sort by price:</label>
-        <select onChange={(e) => setSortOrder(e.target.value)}>
+        <select
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+        >
           <option value="">Select</option>
           <option value="lowToHigh">Low to High</option>
           <option value="highToLow">High to Low</option>
@@ -38,16 +56,18 @@ function ProductsPage() {
         <input
           type="number"
           placeholder="Min price"
-          onChange={(e) =>
-            setPriceFilter({ ...priceFilter, min: Number(e.target.value) })
-          }
+          value={priceFilter.min}
+          onFocus={(e) => e.target.value === "0" && (e.target.value = "")}
+          onBlur={(e) => e.target.value === "" && handlePriceChange("min", "0")}
+          onChange={(e) => handlePriceChange("min", e.target.value)}
         />
         <input
           type="number"
           placeholder="Max price"
-          onChange={(e) =>
-            setPriceFilter({ ...priceFilter, max: Number(e.target.value) })
-          }
+          value={priceFilter.max}
+          onFocus={(e) => e.target.value === "0" && (e.target.value = "")}
+          onBlur={(e) => e.target.value === "" && handlePriceChange("max", "0")}
+          onChange={(e) => handlePriceChange("max", e.target.value)}
         />
       </div>
       <div className="product-list">
@@ -64,5 +84,4 @@ function ProductsPage() {
     </div>
   );
 }
-
 export default ProductsPage;
