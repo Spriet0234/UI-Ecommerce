@@ -1,14 +1,30 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css"; // Ensure you have this CSS file in your project
 
 function Login() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  // Define acceptable username and password pairs
+  const credentials = [
+    { username: "user1", password: "pass1" },
+    { username: "user2", password: "pass2" },
+    { username: "user3", password: "pass3" },
+  ];
+
   const handleLogin = (event) => {
     event.preventDefault();
-    console.log("Logging in with:", username, password);
-    // Here you would add your authentication logic or integration
+    const isValid = credentials.some(
+      (cred) => cred.username === username && cred.password === password
+    );
+    if (isValid) {
+      console.log("Login successful");
+      navigate("/userpage"); // Redirect to user page on successful login
+    } else {
+      alert("Invalid username or password");
+    }
   };
 
   return (

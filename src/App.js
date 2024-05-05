@@ -13,6 +13,7 @@ import Login from "./Login.js";
 import CheckoutPage from "./CheckoutPage.js";
 import OrderConfirmationPage from "./Confirmation.js";
 import ContactUsPage from "./Contact.js";
+import UserPage from "./UserPage.js";
 
 function Footer() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/Checkout" element={<CheckoutPage />} />
               <Route path="/Contact" element={<ContactUsPage />} />
+              <Route path="/userpage" element={<UserPage />} />
               <Route
                 path="/order-confirmation"
                 element={<OrderConfirmationPage />}

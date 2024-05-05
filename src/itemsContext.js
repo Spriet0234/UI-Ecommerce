@@ -330,6 +330,173 @@ export const ItemsProvider = ({ children }) => {
       description:
         " Fully Modular PSU: Reliable and efficient low-noise power supply with fully modular cabling, so you only have to connect the cables your system build needs.",
     },
+
+    {
+      id: 31,
+      name: "Language Translator",
+      image: "https://m.media-amazon.com/images/I/81GMTOSRWjL._AC_UL320_.jpg",
+      price: 40.99,
+      description: "Device,Two-Way Real-Time AI Voice Instant Translator.",
+    },
+    {
+      id: 32,
+      name: "Precision Screwdriver",
+      image: "https://m.media-amazon.com/images/I/41Q8OGEeh5L._AC_UL320_.jpg",
+      price: 10.99,
+      description:
+        "Precision Screwdriver Set, 4-in-1 Electronics Pocket Screwdriver.",
+    },
+    {
+      id: 33,
+      name: "Laptop Backpack",
+      image: "https://m.media-amazon.com/images/I/71Y1ru0ocfL._AC_UL320_.jpg",
+      price: 27.99,
+      description:
+        "15.6 Inch Travel Laptop Bag Rucksack with USB Charging Port.",
+    },
+    {
+      id: 34,
+      name: "2 Pack Keyboard Cleaner",
+      image: "https://m.media-amazon.com/images/I/81ITlnEffZL._AC_UL320_.jpg",
+      price: 8.99,
+      description:
+        "Dust Cleaning Gel with 5 Keyboard Cleaning Kit Detailing Cleaning Putty .",
+    },
+    {
+      id: 35,
+      name: "Quest 2",
+      image: "https://m.media-amazon.com/images/I/61GhF+JUXGL._AC_UL320_.jpg",
+      price: 310.99,
+      description: "In-One Virtual Reality Headset — 256 GB.",
+    },
+    {
+      id: 36,
+      name: "Smart Glasses",
+      image: "https://m.media-amazon.com/images/I/51OnO5BqZuL._AC_SY355_.jpg",
+      price: 450.99,
+      description:
+        "Air 2 AR Glasses - Smart Glasses with 201'' Micro OLED, Ultra-fast 120Hz, 600nits Brightness, 1080P Video Display Glasses, and Work on Android/iOS/Consoles/PC.",
+    },
+    {
+      id: 37,
+      name: "Wrist Worn Keyboard, AirMouse & Controller",
+      image: "https://m.media-amazon.com/images/I/41nqmhQJ6yL._AC_SX355_.jpg",
+      price: 300.99,
+      description:
+        "Wrist Worn Keyboard, AirMouse & Controller for VR, AR, MR, Tablets, PC, Laptops, Smartwatch, Smartphones, TVs & Projectors.",
+    },
+    {
+      id: 38,
+      name: "Keyboard and Mouse",
+      image: "https://m.media-amazon.com/images/I/51NZ8DOfQTL._AC_UL320_.jpg",
+      price: 80.99,
+      description:
+        "Logitech MK735 Performance Wireless Keyboard & Mouse Combo.",
+    },
+    {
+      id: 39,
+      name: "Retro Keyboard",
+      image: "https://m.media-amazon.com/images/I/918ji9k7BzL._AC_UL320_.jpg",
+      price: 109.99,
+      description: "Retro Typewriter Keyboard Wireless Mechanical Keyboard.",
+    },
+    {
+      id: 40,
+      name: "Satellite Communicator",
+      image: "",
+      price: 355.99,
+      description:
+        "Mini 2, Lightweight and Compact Satellite Communicator, Hiking Handheld, Black.",
+    },
+    {
+      id: 41,
+      name: "Apple AirTag",
+      image: "https://m.media-amazon.com/images/I/713xuNx00oS._AC_UY218_.jpg",
+      price: 29.99,
+      description:
+        "Keep track of and find your items alongside friends and devices in the Find My app.",
+    },
+    {
+      id: 42,
+      name: "Portable Charger for Apple Watch",
+      image: "https://m.media-amazon.com/images/I/71Wd55ahD2L._AC_SX522_.jpg",
+      price: 15.99,
+      description:
+        "1200mAh Magnetic Keychain Wireless Power Bank Watch Charger for iWatch.",
+    },
+    {
+      id: 43,
+      name: "Desk Vacuum Cleaner",
+      image: "https://m.media-amazon.com/images/I/71uWfO8AcaL._AC_SX466_.jpg",
+      price: 20.99,
+      description:
+        "Mini Table Vacuum Improved Details Rechargeable More Durable Vac Sucks up Tiny Items Crumbs for Desktop Drawer Countertop.",
+    },
+    {
+      id: 44,
+      name: "CyberTruck",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cybertruck-fremont-cropped.jpg",
+      price: 80420.99,
+      description:
+        "DELIVERY IN 2025 |340 MI. RANGE (EST.) |4.1 SEC. 0-60 MPH |112 MPH TOP SPEED |600 HORSEPOWER |7,435 LB-FT TORQU |11,000 LBS. TOWING CAPACITY.",
+    },
+    {
+      id: 44,
+      name: "3D Printer",
+      image: "https://m.media-amazon.com/images/I/61L4aoIqYOL._AC_SY355_.jpg",
+      price: 170.99,
+      description:
+        "Fully Open Source with Resume Printing Function DIY 3D Printers Printing Size 8.66x8.66x9.84 inch.",
+    },
+    {
+      id: 45,
+      name: "GoPro",
+      image: "https://m.media-amazon.com/images/I/8178l+fMLyL._AC_SY355_.jpg",
+      price: 300.99,
+      description:
+        "Waterproof Action Camera with 5.3K60 Ultra HD Video, 27MP Photos, 1/1.9'' Image Sensor, Live Streaming, Webcam, Stabilization.",
+    },
+    {
+      id: 46,
+      name: "Bidet",
+      image: "https://m.media-amazon.com/images/I/41SWud1CxJL._AC_SX425_.jpg",
+      price: 399.99,
+      description:
+        "PureWash E590 Elongated Bidet Toilet Seat, Heated Bidet, Bidets for Existing Toilets, Nightlight, Self-Cleaning Nozzle.",
+    },
+    {
+      id: 47,
+      name: "Echo Show",
+      image: "https://m.media-amazon.com/images/I/51XDkG-IhgL._AC_SY355_.jpg",
+      price: 90.99,
+      description:
+        "Smart display with 2x the bass and clearer sound. Set alarms and timers, sleep soundly with a relaxing playlist.",
+    },
+    {
+      id: 48,
+      name: "Sony Camera",
+      image: "https://m.media-amazon.com/images/I/71vpzW1nQJL._AC_SX355_.jpg",
+      price: 2700.99,
+      description:
+        "Sony Alpha 7 IV Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit.",
+    },
+    {
+      id: 49,
+      name: "PS5",
+      image: "https://m.media-amazon.com/images/I/51eOztNdCkL._SX466_.jpg",
+      price: 600.99,
+      description:
+        "Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.",
+    },
+    {
+      id: 50,
+      name: "Xbox One",
+      image: "https://m.media-amazon.com/images/I/71RmaDXNRTL._SX342_.jpg",
+      price: 210.99,
+      description:
+        "Games play better on Xbox One X With 40% more power than any other console, experience immersive true 4K gaming.",
+    },
   ]);
 
   return (

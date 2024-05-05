@@ -19,12 +19,15 @@ function Header() {
       <img src={logo} className="App-logo" alt="logo" />
       <form onSubmit={handleSearch}>
         <input
+          aria-label="Submit Form"
           type="text"
           placeholder="Search products..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button type="submit" aria-label="Search Button">
+          Search
+        </button>
       </form>
       <nav>
         <Link to="/">Home</Link>
