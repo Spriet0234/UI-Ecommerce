@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useMemo } from "react";
 import { useLocation } from "react-router-dom";
 import { ItemsContext } from "./itemsContext";
 import Product from "./Product";
-import "./Product.css"; // Ensure CSS is imported
+import "./Product.css";
 
 function ProductsPage() {
   const { items } = useContext(ItemsContext);
@@ -19,23 +19,26 @@ function ProductsPage() {
     }));
   };
 
-  const filteredItems = items.filter(
-    (item) =>
-      (!searchTerm || item.name.toLowerCase().includes(searchTerm)) &&
-      (priceFilter.min === "" || item.price >= priceFilter.min) &&
-      (priceFilter.max === "" || item.price <= priceFilter.max)
-  );
-
-  if (sortOrder === "lowToHigh") {
-    filteredItems.sort((a, b) => a.price - b.price);
-  } else if (sortOrder === "highToLow") {
-    filteredItems.sort((a, b) => b.price - a.price);
-  }
-
   const resetFilters = () => {
     setSortOrder("");
     setPriceFilter({ min: "", max: "" });
   };
+
+  const sortedFilteredItems = useMemo(() => {
+    let itemsToFilter = items.filter(
+      (item) =>
+        (!searchTerm || item.name.toLowerCase().includes(searchTerm)) &&
+        (priceFilter.min === "" || item.price >= priceFilter.min) &&
+        (priceFilter.max === "" || item.price <= priceFilter.max)
+    );
+
+    if (sortOrder === "lowToHigh") {
+      return itemsToFilter.sort((a, b) => a.price - b.price);
+    } else if (sortOrder === "highToLow") {
+      return itemsToFilter.sort((a, b) => b.price - a.price);
+    }
+    return itemsToFilter;
+  }, [items, searchTerm, priceFilter, sortOrder]);
 
   return (
     <div className="page-layout">
@@ -71,7 +74,7 @@ function ProductsPage() {
         />
       </div>
       <div className="product-list">
-        {filteredItems.map((item) => (
+        {sortedFilteredItems.map((item) => (
           <Product
             key={item.id}
             id={item.id}

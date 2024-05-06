@@ -442,7 +442,7 @@ export const ItemsProvider = ({ children }) => {
         "DELIVERY IN 2025 |340 MI. RANGE (EST.) |4.1 SEC. 0-60 MPH |112 MPH TOP SPEED |600 HORSEPOWER |7,435 LB-FT TORQU |11,000 LBS. TOWING CAPACITY.",
     },
     {
-      id: 44,
+      id: 51,
       name: "3D Printer",
       image: "https://m.media-amazon.com/images/I/61L4aoIqYOL._AC_SY355_.jpg",
       price: 170.99,
